@@ -39,4 +39,29 @@ get_guns <- gc_df %>%
 rownames(get_guns) <- c("Female","Male") # naming the rows
 ```
 
+On the 2nd day the creator deemed that a chi-square test shall be performed
 
+My name is Eamon the collaborator and I'm going to be doing chi-square test for independence (I was appointed by the great creator)
+
+"We ask if there is a significant association between recommended gun control action and sex (should guns be easier, harder, or the same difficulty to get?)."
+
+```{r}
+
+# Let's look at the actual proportions:
+
+guns_prop <- prop.table(as.matrix(get_guns), 1) # The "1" gives the margin of proportions -In this case run the proportions by the row (female, male)
+
+guns_prop
+
+# Run a chi-square test for independence 
+
+guns_x2 <- chisq.test(get_guns)
+guns_x2
+
+```
+
+Thus by the end of the second day, the recomended government action on gun access differed significantly between male (n = ) and female (n = ) respondents ($\chi^2$(`r guns_x2$parameter`)) =.... Notably, a much higher proportion of female respondents (57.4%) recomend making it more difficult to get guns compared to (40.4%) males. 
+
+
+
+On the third day
