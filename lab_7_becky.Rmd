@@ -9,6 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+<<<<<<< HEAD
 This: I'm Allison and I am editing this file
 
 ```{r}
@@ -20,3 +21,8 @@ gc_df <- read_csv("gc_df.csv")
 ```
 
 We are asking is there a significant difference in recommended gun control action for male and female respondents (should guns be easier, harder, or the same difficulty to get?).
+=======
+This: I'm Allison and I am editing this file -Nice one I'm calling you this from now on --Eamon 
+
+I'm Eamon and I'm also editing this file
+>>>>>>> a5528db84001def3aa556af78c25b6fb18e332a9
